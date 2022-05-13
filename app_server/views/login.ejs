@@ -1,0 +1,23 @@
+<%if (typeof Username!='undefined' && typeof Password!='undefined' ) {%>
+
+    <h3>
+        <%=Username%>
+    </h3>
+    <h3>
+        <%=Password%>
+    </h3>
+    <%} %>
+
+
+
+        <form action="/login" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Kullanıcı Adı</label>
+                <input name="Username" type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Şifre </label>
+                <input name="Password" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-success" value="Giriş">Giriş Yap</button>
+        </form>
